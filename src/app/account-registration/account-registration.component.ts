@@ -11,6 +11,7 @@ export class AccountRegistrationComponent implements OnInit {
   public isFormValid = false;
   public isclick = false;
   public fromValue= null;
+  imagePath = "https://stackblitz.com/files/medline-demo/github/amar-bodake/medline-demo/master/src/assets/images/error.png"
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {

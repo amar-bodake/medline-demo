@@ -24,12 +24,12 @@
                  type="text" class="form-control" formControlName="name"/>
                 <div *ngIf="accountForm.controls['name'].invalid && (accountForm.controls['name'].dirty || accountForm.controls['name'].touched)"  class="alert alert-warning">
                     <div *ngIf="accountForm.controls['name'].errors.required">
-                        <img src="assets/images/error.png" class="img-responsive" alt="Error">
+                        <img [src]="imagePath" class="img-responsive" alt="Error">
                         <span>First Name is a required field</span>
                     </div>
 
                     <div *ngIf="accountForm.controls['name'].errors.pattern">
-                        <img src="assets/images/error.png" class="img-responsive" alt="Error">
+                        <img [src]="imagePath" class="img-responsive" alt="Error">
                         <span>Please insert valid Name</span>
                     </div>
                     
@@ -44,12 +44,12 @@
                         <div *ngIf="accountForm.controls['phone'].invalid && (accountForm.controls['phone'].dirty || accountForm.controls['phone'].touched)"
                             class="alert alert-warning">
                             <div *ngIf="accountForm.controls['phone'].errors.required">
-                                <img src="assets/images/error.png" class="img-responsive" alt="Error">
+                                <img [src]="imagePath" class="img-responsive" alt="Error">
                                 <span>Phone is a required field</span>
                             </div>
 
                             <div *ngIf="accountForm.controls['phone'].errors.pattern">
-                                <img src="assets/images/error.png" class="img-responsive" alt="Error">
+                                <img [src]="imagePath" class="img-responsive" alt="Error">
                                 <span>Please insert valid Phone number</span>
                             </div>
                         </div>
@@ -71,12 +71,12 @@
                 <div *ngIf="accountForm.controls['email'].invalid && (accountForm.controls['email'].dirty || accountForm.controls['email'].touched)"
                     class="alert alert-warning">
                     <div *ngIf="accountForm.controls['email'].errors.required">
-                        <img src="assets/images/error.png" class="img-responsive" alt="Error">
+                        <img [src]="imagePath" class="img-responsive" alt="Error">
                         <span>Email is a required field</span>
                     </div>
 
                     <div *ngIf="accountForm.controls['email'].errors.pattern">
-                        <img src="assets/images/error.png" class="img-responsive" alt="Error">
+                        <img [src]="imagePath" class="img-responsive" alt="Error">
                         <span>Please insert valid Email</span>
                     </div>
                 </div>
@@ -93,12 +93,12 @@
                 <div *ngIf="accountForm.controls['lastName'].invalid && (accountForm.controls['lastName'].dirty || accountForm.controls['lastName'].touched)"
                     class="alert alert-warning">
                     <div *ngIf="accountForm.controls['lastName'].errors.required">
-                        <img src="assets/images/error.png" class="img-responsive" alt="Error">
+                        <img [src]="imagePath" class="img-responsive" alt="Error">
                     <span>Last Name is a required field</span>
                     </div>
 
                     <div *ngIf="accountForm.controls['lastName'].errors.pattern">
-                        <img src="assets/images/error.png" class="img-responsive" alt="Error">
+                        <img [src]="imagePath" class="img-responsive" alt="Error">
                         <span>Please insert valid Last Name</span>
                     </div>
                 </div>
